@@ -30,7 +30,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
 	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
 	<!-- <link rel="stylesheet" href="css/slick.css"> -->
@@ -51,7 +51,7 @@
 				<input name="name" type="text" class="forminput">
 				<input name="email" type="email" class="forminput">
 				<input type="tel" class="form__input tel" name="phone" required="" placeholder="Введите Ваш номер телефона" id="phone1">
-				<button class="button button__form" id="modalB" type="submit">Заказать звонок</button>
+				<button class="button__form" id="modalB" type="submit">Заказать звонок</button>
 			</form>
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 					<div class="header__top-logo">
 						<img src="./img/logo.svg" alt="Обслуживание и ремонт котельных, горелок и насосов в Санкт-Петербурге">
 					</div>
-					<span class="header__top-desc">Обслуживание и ремонт котельных, горелок и насосов в Санкт-Петербурге</span>
+					<span class="header__top-desc">Обслуживание и ремонт котельных,<br>горелок и насосов в Санкт-Петербурге</span>
 				</div>
 				<a class="header__top-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить
 					консультацию</a>
@@ -74,7 +74,7 @@
 			</div>
 		</div>
 	</div>
-	<header class="header__bg blue-bg">
+	<header class="header__bg">
 		<div class="container">
 			<div class="header__wrap">
 				<div class="header__main-wrap">
@@ -87,17 +87,19 @@
 						</ul>
 					</div>
 					<div class="form-const form__header">
-						<h5>Получить консультацию	специалиста</h5>
-						<p class="form-main__title">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и	сориентируем по цене</p>
-						<form action="send.php" id="form2" class="form" method="post">
-							<input name="formname" type="text" class="forminput">
-							<input name="name" type="text" class="forminput">
-							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone2">
-							<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
-								data-desc="Заявка на бесплатную консультацию">Получить консультацию</button>
-						</form>
-						<p>Связаться через мессенджеры <a href="#">whatsapp</a><a href="#">viber</a></p>
+						<div class="form-const__wrap">
+							<h5>Получить консультацию	специалиста</h5>
+							<p class="form-main__title">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и	сориентируем по цене</p>
+							<form action="send.php" id="form2" class="form" method="post">
+								<input name="formname" type="text" class="forminput">
+								<input name="name" type="text" class="forminput">
+								<input name="email" type="email" class="forminput">
+								<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone2">
+								<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
+									data-desc="Заявка на бесплатную консультацию">Получить консультацию</button>
+							</form>
+							<p>Связаться через мессенджеры <a href="#">whatsapp</a><a href="#">viber</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -113,7 +115,7 @@
 							<p class="proff__item-title">Ремонт</p>
 							<p class="proff__item-desc">Профессиональный ремонт всех видов котлов, насосов и горелок</p>
 						</div>
-						<a href="#">Получить консультацию</a>
+						<a class="main-button" href="#">Получить консультацию</a>
 					</div>
 				</div>
 			</div>

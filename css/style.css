@@ -611,3 +611,35 @@ section.questions {
 .scrolloff {
 	pointer-events: none;
 }
+.contact__form-wrap {
+	max-width: 588px;
+	background: #FFFFFF;
+	border-radius: 15px;
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+.contact__form {
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 15px;
+	margin: 16px 13px;
+	padding: 20px 27px;
+}
+.contact__form-title {
+	font-weight: bold;
+	font-size: 40px;
+	color: #000000;
+}
+.contact__form p {
+	font-size: 18px;
+	line-height: 22px;
+}
+.contact__form p span {
+	font-weight: bold;
+}
+.contact__phone {
+	font-weight: 600;
+	font-size: 40px;
+	text-decoration: none;
+	color: #000000;
+}

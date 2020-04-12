@@ -599,8 +599,12 @@ section.questions {
 	margin-bottom: 0;
 	text-align: left;
 }
+/* ---------------- */
+.contact {
+	position: relative;
+}
 
-#map-wrap {
+.contact__map-wrap iframe {
 	width: 100%;
 	height: 680px;
 }

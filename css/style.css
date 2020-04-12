@@ -27,6 +27,10 @@ button:focus {
 button::-moz-focus-inner {
 	border: 0 !important;
 }
+section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
 .forminput {
 	display: none;
 }
@@ -105,6 +109,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ffffff;
+	padding-bottom: 100px;
 }
 .header__main-wrap {
 	display: flex;
@@ -112,11 +117,13 @@ header {
 	align-items: center;
 }
 h1 {
+	margin-bottom: 20px;
 	font-weight: bold;
 	font-size: 46px;
 	line-height: 64px;
 }
 .header__main ul li {
+	position: relative;
 	display: flex;
 	align-items: center;
 	/* width: 579px; */
@@ -131,6 +138,28 @@ h1 {
 	background: #FFFFFF;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
+}
+.header__main ul li::before {
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	top: 50%;
+	left: 31px;
+	content: '';
+	background-image: url('../img/header-sprite.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transform: translateY(-50%);
+}
+.header__main ul li:nth-child(2)::before {
+	background-position: -105px 0;
+}
+.header__main ul li:nth-child(3)::before {
+	background-position: -211px 0;
+}
+.header__main ul li span {
+	font-weight: 600;
+	color: #2164E5;
 }
 .form-const {
 	background: #ffffff;

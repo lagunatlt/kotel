@@ -604,3 +604,6 @@ section.questions {
 	width: 100%;
 	height: 680px;
 }
+.scrolloff {
+	pointer-events: none;
+}

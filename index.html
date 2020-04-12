@@ -32,7 +32,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
-	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<!-- <link rel="stylesheet" href="css/slick.css"> -->
 	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 	<link rel="stylesheet" href="css/aos.css">
@@ -206,12 +206,12 @@
 						<h5 class="form-main__title">Получите бесплатную диагностику оборудования</h5>
 						<p class="form-main__desc">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и сориентируем по
 							цене</p>
-						<form action="send.php" id="form2" class="form" method="post">
+						<form action="send.php" id="form3" class="form" method="post">
 							<input name="formname" type="text" class="forminput">
 							<input name="name" type="text" class="forminput">
 							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone2">
-							<button id="button1" class="button button__form button-click button--blue" type="submit" data-mainform="true"
+							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone3">
+							<button id="button2" class="button button__form button-click button--blue" type="submit" data-mainform="true"
 								data-desc="Заявка на бесплатную консультацию">Получить диагностику</button>
 						</form>
 						<p class="form-main__contact">Связаться через мессенджеры <a href="#" class="form-main__w"></a><a href="#"
@@ -307,19 +307,19 @@
 			<div class="installation__wrap">
 				<div class="installation__l">
 					<h3>Установка диспетчеризации	или текущий ремонт оборудования <span>бесплатно</span> при заключении <br><span>договора на год</span></h3>
-					<a href="#" class="install__dogovor">Договор на год</a>
+					<div class="install__dogovor-wrap"><a href="#" class="install__dogovor">Договор на год</a></div>
 				</div>
 				<div class="form-const form__main form-install">
 					<div class="form-const__wrap">
 						<h5 class="form-main__title">Оставьте заявку<br>на заключение договора</h5>
 						<p class="form-main__desc">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и сориентируем по
 							цене</p>
-						<form action="send.php" id="form2" class="form" method="post">
+						<form action="send.php" id="form4" class="form" method="post">
 							<input name="formname" type="text" class="forminput">
 							<input name="name" type="text" class="forminput">
 							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone2">
-							<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
+							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone4">
+							<button id="button3" class="button button__form button-click" type="submit" data-mainform="true"
 								data-desc="Заявка на бесплатную консультацию">Оставить заявку</button>
 						</form>
 						<p class="form-main__contact">Связаться через мессенджеры <a href="#" class="form-main__w"></a><a href="#"
@@ -336,13 +336,13 @@
 				<h2>Наши сертификаты</h2>
 				<div class="cert__items cert__slider">
 					<div class="cert__item">
-						<img src="img/certif-item-1.png" alt="">
+						<a data-fancybox="gallery" href="img/big-cert/certif-item-1.jpg" class="object__item-img"><img src="img/certif-item-1.jpg" alt=""></a>
 					</div>
 					<div class="cert__item">
-						<img src="img/certif-item-2.png" alt="">
+						<a data-fancybox="gallery" href="img/big-cert/certif-item-2.jpg" class="object__item-img"><img src="img/certif-item-2.jpg" alt=""></a>
 					</div>
 					<div class="cert__item">
-						<img src="img/certif-item-3.png" alt="">
+						<a data-fancybox="gallery" href="img/big-cert/certif-item-3.jpg" class="object__item-img"><img src="img/certif-item-3.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -357,12 +357,12 @@
 					<div class="form-const__wrap">
 						<h5 class="form-main__title">Оставьте заявку и мы<br>сами перезвоним Вам в<br>ближайшее время</h5>
 						<p class="form-main__desc">Это абсолютно бесплатно и ни к чему Вас не обязывает</p>
-						<form action="send.php" id="form2" class="form" method="post">
+						<form action="send.php" id="form5" class="form" method="post">
 							<input name="formname" type="text" class="forminput">
 							<input name="name" type="text" class="forminput">
 							<input name="email" type="email" class="forminput">
-							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone2">
-							<button id="button1" class="button button__form button-click" type="submit" data-mainform="true"
+							<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone5">
+							<button id="button4" class="button button__form button-click" type="submit" data-mainform="true"
 								data-desc="Заявка на бесплатную консультацию">Получить консультацию</button>
 						</form>
 						<p class="form-main__contact">Связаться через мессенджеры <a href="#" class="form-main__w"></a><a href="#"
@@ -414,9 +414,9 @@
 	</footer>
 	<script src="./js/jq341.js"></script>
 	<!-- <script src="./js/slick.min.js"></script> -->
-	<!-- <script src="./js/jquery.fancybox.min.js"></script> -->
+	<script src="./js/jquery.fancybox.min.js"></script>
 	<script src="./js/aos.js"></script>
-	<!-- <script src="./js/jquery.validate.min.js"></script> -->
+	<script src="./js/jquery.validate.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 

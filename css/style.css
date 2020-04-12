@@ -258,6 +258,7 @@ h1 {
 	background: #ffffff;
 	color: #000000;
 	border-radius: 15px;
+	transition: box-shadow 1.5s;
 }
 .form-const__wrap {
 	display: flex;
@@ -268,19 +269,21 @@ h1 {
 	border-radius: 15px;
 	margin: 16px 13px;
 	padding: 20px 27px;
+	
 }
 .form-const:hover {
-	animation: form 1.5s linear 0s infinite alternate;
-	/* box-shadow: 0 0 60px #aaa; */
+	/* animation: form 1.5s linear 0s infinite alternate; */
+	box-shadow: 0 0 50px #aaa;
+	transition: box-shadow 1.5s;
 }
-@keyframes form {
+/* @keyframes form {
 	0% {
 		box-shadow: 0 0 0 #aaa;
 	}
 	100% {
 		box-shadow: 0 0 50px #aaa;
 	}
-}
+} */
 .form-main__title {
 	font-weight: 600;
 	font-size: 22px;
@@ -314,7 +317,14 @@ input {
 	line-height: 20px;
 	/* text-align: center; */
 	color: #7B7B7B;
+	transition: all 0.2s;
 }
+.input-left {
+	padding-left: 113px;
+}
+/* input:focus {
+	padding-left: 113px;
+} */
 .button__form {
 	display: flex;
 	justify-content: center;
@@ -591,11 +601,14 @@ h3 span {
 	font-size: 38px;
 	margin-bottom: 90px;
 }
+.install__dogovor-wrap {
+	width: 400px;
+}
 .install__dogovor {
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: 400px;
+	/* width: 400px; */
 	height: 114px;
 	padding-left: 156px;
 	background: #FFD60D;
@@ -605,6 +618,7 @@ h3 span {
 	line-height: 29px;
 	text-decoration: none;
 	color: #000000;
+	transition: all 0.5s;
 }
 .install__dogovor::before {
 	position: absolute;
@@ -616,6 +630,14 @@ h3 span {
 	background-image: url('../img/dogovor.png');
 	background-repeat: no-repeat;
 	background-size: 135px;
+	transition: all 0.5s;
+}
+ .install__dogovor-wrap:hover .install__dogovor::before {
+	bottom: 21px;
+	transition: all 0.5s;
+}
+.install__dogovor:hover {
+	box-shadow: 0 0 25px rgba(179, 179, 179, 0.8);
 }
 .form-install {
 	position: relative;
@@ -752,6 +774,9 @@ section.questions {
 	text-decoration: none;
 	color: #000000;
 }
+.contact__phone:hover {
+	color: #2164E5;
+}
 /* .contact__form-wrap .form-main__contact {
 	justify-content: flex-start;
 } */
@@ -766,4 +791,31 @@ footer {
 }
 .footer__link-form {
 	color: #000000;
+}
+.footer__phone:hover,
+.footer__link-form:hover {
+	color: #2164E5;
+}
+
+/* -------------- */
+#form1,
+#form2,
+#form3,
+#form4,
+#form5 {
+	position: relative;
+}
+.error {
+	color: #cc0e0e;
+}
+#phone1-error,
+#phone2-error,
+#phone3-error,
+#phone4-error,
+#phone5-error {
+	font-size: 13px;
+	position: absolute;
+	top: -21px;
+	left: 50%;
+	transform: translateX(-50%);
 }

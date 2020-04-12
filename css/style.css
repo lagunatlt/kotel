@@ -346,8 +346,8 @@ input {
 	transition: all 0.1s;
 }
 .button__form:hover {
-	transform: translateY(-2px);
-	box-shadow: 0px 4px 0px #D3B210;
+	transform: translateY(-3px);
+	box-shadow: 0px 5px 0px #D3B210;
 }
 .button__form:active {
 	transform: translateY(0);
@@ -504,7 +504,7 @@ h3 span {
 }
 .button--blue:hover {
 	/* transform: translateY(-2px); */
-	box-shadow: 0px 4px 0px #254E9E;
+	box-shadow: 0px 5px 0px #254E9E;
 }
 
 .button--blue:active {
@@ -819,3 +819,49 @@ footer {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+/* --------------- */
+.form__modal {
+	width: 300px;
+}
+
+.fancybox-content {
+	padding: 60px;
+	border-radius: 10px;
+}
+
+.form__modal input {
+	width: 100%;
+	max-width: 100%;
+	height: 56px;
+	padding: 26px 22px;
+	border-radius: 10px;
+}
+
+.form__modal .button__form {
+	width: 100%;
+	min-height: 68px;
+	border-radius: 10px;
+}
+
+.form__modal .form-main__desc {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.form__modal .form-main__w,
+.form__modal .form-main__v {
+	display: inline;
+}
+
+.form__modal .form-main__w {
+	margin-left: 5px;
+}
+
+.form__modal .form-main__v {
+	margin-left: 5px;
+}
+.input-left__modal {
+	padding-left: 64px !important;
+}
+/* ------------- */

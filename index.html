@@ -43,17 +43,23 @@
 
 <body>
 	<div class="modal-content" id="hidden-content" style="display: none;">
-		<div class="form__modal">
-			<h5>Получить консультацию специалиста</h5>
-			<p class="form-main__title">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и сориентируем по цене</p>
-			<form action="send.php" id="form1" class="form" method="post">
-				<input name="formname" type="text" class="forminput" id="formName">
-				<input name="name" type="text" class="forminput">
-				<input name="email" type="email" class="forminput">
-				<input type="tel" class="form__input tel" name="phone" required="" placeholder="Введите Ваш номер телефона" id="phone1">
-				<button class="button__form" id="modalB" type="submit">Заказать звонок</button>
-			</form>
-		</div>
+
+			<div class="form__modal">
+				<h5 class="form-main__title">Получить консультацию специалиста</h5>
+				<p class="form-main__desc">Введите Ваш номер телефона, мы с Вами свяжемся, уточним детали заказа и сориентируем по
+					цене</p>
+				<form action="send.php" id="form2" class="form" method="post">
+					<input name="formname" type="text" class="forminput">
+					<input name="name" type="text" class="forminput">
+					<input name="email" type="email" class="forminput">
+					<input type="tel" class="form__input tel" name="phone" placeholder="Введите Ваш номер телефона" id="phone1">
+					<button id="modalB" class="button button__form button-click" type="submit" data-mainform="true"
+						data-desc="Заявка на бесплатную консультацию">Получить консультацию</button>
+				</form>
+				<p class="form-main__contact">Связаться через мессенджеры <a href="#" class="form-main__w"></a><a href="#"
+						class="form-main__v"></a></p>
+			</div>
+
 	</div>
 
 	<div class="header__top">
@@ -117,7 +123,7 @@
 								<p class="proff__item-desc">Профессиональный ремонт всех видов котлов, насосов и горелок</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 	
 					<div data-aos="flip-up" class="proff__item">
@@ -127,7 +133,7 @@
 								<p class="proff__item-desc">Обслуживание котельных любой мощности</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button"data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -136,7 +142,7 @@
 								<p class="proff__item-desc">Замена любых запчастей котлов, насосов и горелок</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -145,7 +151,7 @@
 								<p class="proff__item-desc">Чистка спец. оборудованием любых видов котлов и горелок</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -154,7 +160,7 @@
 								<p class="proff__item-desc">Промывка любых видов котлов	и теплообменников</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -163,7 +169,7 @@
 								<p class="proff__item-desc">Профессиональный монтаж любых	видов котлов, насосов и горелок</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -172,7 +178,7 @@
 								<p class="proff__item-desc">Комплекс мероприятий по вводу	котельной в эксплуатацию</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -181,7 +187,7 @@
 								<p class="proff__item-desc">Наладочные испытания котлов</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 					<div data-aos="flip-up" class="proff__item">
 						<div class="proff__item-img">
@@ -190,7 +196,7 @@
 								<p class="proff__item-desc">Режимная наладка любых видов котлов</p>
 							</div>
 						</div>
-						<a class="main-button" href="#">Получить консультацию</a>
+						<a class="main-button" data-fancybox data-src="#hidden-content" href="javascript:;">Получить консультацию</a>
 					</div>
 				</div>
 			</div>

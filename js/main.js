@@ -131,39 +131,51 @@ $('button[type="submit"]').click(function () {
 /* смещение инпута при фокусе и клике */
 let formInput = document.querySelectorAll('.form__input');
 for (let i = 0; formInput.length > i; i++) {
-	if (!formInput[i].value == '') {
-		formInput[i].classList.add('input-left')
-	} else {
-		formInput[i].classList.remove('input-left')
-	}
-
-	formInput[i].addEventListener('focus', function () {
-		if ((!formInput[i].value == '') && (formInput[i].value != '+7 ')) {
-			formInput[i].classList.add('input-left')
-		} else {
-			formInput[i].classList.remove('input-left')
-		}
-	})
-	formInput[i].addEventListener('blur', function () {
-		if ((!formInput[i].value == '') && (formInput[i].value != '+7 ')) {
-			formInput[i].classList.add('input-left')
-		} else {
-			formInput[i].classList.remove('input-left')
-		}
-	})
-	formInput[i].addEventListener('click', function () {
+	let formInputFunction = function() {
 		if (!formInput[i].value == '') {
 			formInput[i].classList.add('input-left')
 		} else {
 			formInput[i].classList.remove('input-left')
 		}
-	})
-	formInput[i].addEventListener('keyup', function () {
+	}
+	formInputFunction();
+	
+	let formInputFunctionAll = function() {
 		if ((!formInput[i].value == '') && (formInput[i].value != '+7 ')) {
 			formInput[i].classList.add('input-left')
 		} else {
 			formInput[i].classList.remove('input-left')
 		}
-	})
+	}
+
+	formInput[i].addEventListener('focus', formInputFunctionAll)
+	formInput[i].addEventListener('blur', formInputFunctionAll)
+	formInput[i].addEventListener('click', formInputFunction)
+	formInput[i].addEventListener('keyup', formInputFunctionAll)
 } 
+
+
+let formInputPhone = document.getElementById('phone1');
+	let formInputPhoneFunction = function () {
+		if (!formInputPhone.value == '') {
+			formInputPhone.classList.add('input-left__modal')
+		} else {
+			formInputPhone.classList.remove('input-left__modal')
+		}
+	}
+	formInputPhoneFunction();
+
+	let formInputPhoneFunctionAll = function() {
+		if ((!formInputPhone.value == '') && (formInputPhone.value != '+7 ')) {
+			formInputPhone.classList.add('input-left__modal')
+		} else {
+			formInputPhone.classList.remove('input-left__modal')
+		}
+	}
+
+	formInputPhone.addEventListener('focus', formInputPhoneFunctionAll)
+	formInputPhone.addEventListener('blur', formInputPhoneFunctionAll)
+	formInputPhone.addEventListener('click', formInputPhoneFunction)
+	formInputPhone.addEventListener('keyup', formInputPhoneFunctionAll)
+
 /* ------------------- */

@@ -38,14 +38,21 @@ section {
 	padding-bottom: 70px;
 }
 
-.mask {
+.mask,
+.mask-item {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: -2;
+}
+.mask {
+	z-index: -2;
+	background: rgba(0, 0, 0, 0.7);
+}
+.mask-item {
+	z-index: 0;
+	background: rgba(0, 0, 0, 0.5);
 }
 .forminput {
 	display: none;
@@ -175,7 +182,7 @@ header {
 }
 .header__bg {
 	position: relative;
-	background-image: url('../img/header-1.jpg');
+	background-image: url('../img/header/header-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -427,40 +434,41 @@ h2 span {
 	width: 360px;
 	height: 253px;
 	margin-bottom: 22px;
-	background-image: url('../img/proff-item-1.jpg');
+	background-image: url('../img/proff/proff-item-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .proff__item:nth-child(2) .proff__item-img {
-	background-image: url('../img/proff-item-2.jpg');
+	background-image: url('../img/proff/proff-item-2.jpg');
 }
 .proff__item:nth-child(3) .proff__item-img {
-	background-image: url('../img/proff-item-3.jpg');
+	background-image: url('../img/proff/proff-item-3.jpg');
 }
 .proff__item:nth-child(4) .proff__item-img {
-	background-image: url('../img/proff-item-4.jpg');
+	background-image: url('../img/proff/proff-item-4.jpg');
 }
 .proff__item:nth-child(5) .proff__item-img {
-	background-image: url('../img/proff-item-5.jpg');
+	background-image: url('../img/proff/proff-item-5.jpg');
 }
 .proff__item:nth-child(6) .proff__item-img {
-	background-image: url('../img/proff-item-6.jpg');
+	background-image: url('../img/proff/proff-item-6.jpg');
 }
 .proff__item:nth-child(7) .proff__item-img {
-	background-image: url('../img/proff-item-7.jpg');
+	background-image: url('../img/proff/proff-item-7.jpg');
 }
 .proff__item:nth-child(8) .proff__item-img {
-	background-image: url('../img/proff-item-8.jpg');
+	background-image: url('../img/proff/proff-item-8.jpg');
 }
 .proff__item:nth-child(9) .proff__item-img {
-	background-image: url('../img/proff-item-9.jpg');
+	background-image: url('../img/proff/proff-item-9.jpg');
 }
 .proff__item-content {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 1;
 	min-height: 128px;
 	padding: 26px;
 	color: #ffffff;
@@ -581,14 +589,21 @@ h3 span {
 } */
 
 .repair__item-img {
-	height: 250px;
 	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 .repair__item-img img {
 	position: relative;
 	top: 50%;
 	left: 50%;
+	width: 100%;
 	transform: translate(-50%, -50%);
+}
+.repair__items-slider1 .repair__item:nth-child(3) .repair__item-img {
+	width: 210px;
 }
 
 /* ------------------ */

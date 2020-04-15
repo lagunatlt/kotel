@@ -605,7 +605,17 @@ h3 span {
 .repair__items-slider1 .repair__item:nth-child(3) .repair__item-img {
 	width: 210px;
 }
+.repair__items-slider3 .repair__item:nth-child(1) .repair__item-img {
+	width: 165px;
+}
 
+.repair__items-slider3 .repair__item:nth-child(2) .repair__item-img {
+	width: 141px;
+}
+
+.repair__items-slider3 .repair__item:nth-child(3) .repair__item-img {
+	width: 228px;
+}
 /* ------------------ */
 
 .install-bg {

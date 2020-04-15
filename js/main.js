@@ -1,4 +1,34 @@
 AOS.init();
+/* ------slider----- */
+$('.repair__items-slider1').slick({
+	infinite: false,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	// centerMode: true,
+	variableWidth: true
+});
+
+$('.repair__items-slider2').slick({
+	infinite: false,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	variableWidth: true
+});
+
+$('.repair__items-slider3').slick({
+	infinite: false,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	variableWidth: true
+});
+
+$('.cert__slider').slick({
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 3
+});
+/* ---------- */
+
 /* fixed-top */
 $(document).ready(function ($) {
 	$(window).scroll(function () {

@@ -534,7 +534,7 @@ h3 span {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 }
 .repair__number {
 	display: flex;
@@ -556,15 +556,19 @@ h3 span {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
+	flex-wrap: wrap;
 }
 .repair__item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 280px;
-	height: 310px;
+	width: 280px !important;
+	height: 310px !important;
+	margin: 50px;
 	background-color: #ffffff;
 	transition: all 0.2s;
+	cursor: pointer;
 }
 .repair__item:hover {
 	box-shadow: 0 0 15px #c4c4c4;
@@ -576,7 +580,7 @@ h3 span {
 	line-height: 46px;
 	text-align: center;
 	color: #000000;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 .repair__item-desc {
 	margin-bottom: 20px;
@@ -594,6 +598,10 @@ h3 span {
 	height: 250px;
 	margin: 0 auto;
 	overflow: hidden;
+	
+	background-repeat: no-repeat;
+	background-size: 250px;
+	background-position: center;
 }
 .repair__item-img img {
 	position: relative;
@@ -602,29 +610,77 @@ h3 span {
 	width: 100%;
 	transform: translate(-50%, -50%);
 }
-.repair__items-slider1 .repair__item:nth-child(3) .repair__item-img {
-	width: 210px;
+.boiler-1 {
+	background-image: url('../img/repair/boiler/boiler-item-1.png');
 }
-.repair__items-slider1 .repair__item:nth-child(5) .repair__item-img {
-	width: 143px;
+.boiler-2 {
+	background-image: url('../img/repair/boiler/boiler-item-2.png');
 }
-.repair__items-slider2 .repair__item:nth-child(4) .repair__item-img {
-	width: 222px;
+.boiler-3 {
+	background-image: url('../img/repair/boiler/boiler-item-3.png');
+	background-size: 210px;
 }
-.repair__items-slider3 .repair__item:nth-child(1) .repair__item-img {
-	width: 165px;
+.boiler-4 {
+	background-image: url('../img/repair/boiler/boiler-item-4.png');
 }
-.repair__items-slider3 .repair__item:nth-child(2) .repair__item-img {
-	width: 141px;
+.boiler-5 {
+	background-image: url('../img/repair/boiler/boiler-item-5.png');
+	background-size: 143px;
 }
-.repair__items-slider3 .repair__item:nth-child(3) .repair__item-img {
-	width: 228px;
+.boiler-6 {
+	background-image: url('../img/repair/boiler/boiler-item-6.png');
 }
-.repair__items-slider3 .repair__item:nth-child(4) .repair__item-img {
-	width: 220px;
+.boiler-7 {
+	background-image: url('../img/repair/boiler/boiler-item-7.png');
 }
-.repair__items-slider3 .repair__item:nth-child(5) .repair__item-img {
-	width: 194px;
+.burner-1 {
+	background-image: url('../img/repair/burner/burner-item-1.png');
+}
+.burner-2 {
+	background-image: url('../img/repair/burner/burner-item-2.png');
+}
+.burner-3 {
+	background-image: url('../img/repair/burner/burner-item-3.png');
+}
+.burner-4 {
+	background-image: url('../img/repair/burner/burner-item-4.png');
+	background-size: 222px;
+}
+.burner-5 {
+	background-image: url('../img/repair/burner/burner-item-5.png');
+}
+.pump-1 {
+	background-image: url('../img/repair/pump/pump-item-1.png');
+	background-size: 165px;
+}
+.pump-2 {
+	background-image: url('../img/repair/pump/pump-item-2.png');
+	background-size: 141px;
+}
+.pump-3 {
+	background-image: url('../img/repair/pump/pump-item-3.png');
+	background-size: 228px;
+}
+.pump-4 {
+	background-image: url('../img/repair/pump/pump-item-4.png');
+	background-size: 220px;
+}
+.pump-5 {
+	background-image: url('../img/repair/pump/pump-item-5.png');
+	background-size: 194px;
+}
+.pump-6 {
+	background-image: url('../img/repair/pump/pump-item-6.png');
+}
+.pump-7 {
+	background-image: url('../img/repair/pump/pump-item-7.png');
+}
+.repair__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 /* ------------------ */
 
@@ -707,10 +763,16 @@ h3 span {
 	justify-content: space-evenly;
 }
 .cert__item {
-	width: 256px;
-	height: 362px;
+	width: 256px !important;
+	height: 362px !important;
+	margin: 50px;
 	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
 	overflow: hidden;
+	transition: all 0.2s;
+}
+.cert__item:hover {
+	box-shadow: 0 0 15px #c4c4c4;
+	transform: translateY(-5px);
 }
 .cert__item img{
 	width: 100%;
@@ -896,20 +958,30 @@ footer {
 	width: 100%;
 	margin-bottom: 30px;
 }
-
+.modal-footer {
+	display: flex;
+	justify-content: center;
+}
+.form__modal .form-main__contact {
+	margin-bottom: 10px;
+}
 .form__modal .form-main__w,
 .form__modal .form-main__v {
 	display: inline;
 }
 
 .form__modal .form-main__w {
-	margin-left: 5px;
+	margin: 10px;
 }
 
 .form__modal .form-main__v {
-	margin-left: 5px;
+	margin: 10px;
 }
 .input-left__modal {
 	padding-left: 64px !important;
 }
 /* ------------- */
+
+.slick-list {
+	padding: 20px;
+}

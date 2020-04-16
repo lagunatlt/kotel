@@ -25,6 +25,7 @@ let phoneNumber = function(number) {
 	}
 
 };
+
 let contactAdress = function(adress) {
 	let contactAdressF = document.getElementById('contactAdress');
 	contactAdressF.innerHTML = adress;

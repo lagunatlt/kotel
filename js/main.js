@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		input.addEventListener("input", mask, false);
 		input.addEventListener("focus", mask, false);
 		input.addEventListener("blur", mask, false);
-		input.addEventListener("keydown", mask, false)
+		input.addEventListener("keydown", mask, false);
 
 	});
 
@@ -119,9 +119,9 @@ window.addEventListener("DOMContentLoaded", function () {
 $('button[type="submit"]').click(function () {
 	// console.log('hi')
 	/*Валидация полей формы*/
-	let formSend = document.querySelectorAll('form')
+	let formSend = document.querySelectorAll('form');
 	for (let i = 0; formSend.length > i; i++) {
-		let nameId = $('#' + formSend[i].attributes.id.value)
+		let nameId = $('#' + formSend[i].attributes.id.value);
 
 		nameId.validate({
 			//Правила валидации
@@ -146,7 +146,7 @@ $('button[type="submit"]').click(function () {
 					beforeSend: function () {},
 					success: function (result) {
 						console.log('ok');
-						window.location.href = 'thanks.html'
+						window.location.href = 'thanks.html';
 					},
 					error: function () {
 						// console.log('none');
@@ -163,50 +163,50 @@ let formInput = document.querySelectorAll('.form__input');
 for (let i = 0; formInput.length > i; i++) {
 	let formInputFunction = function() {
 		if (!formInput[i].value == '') {
-			formInput[i].classList.add('input-left')
+			formInput[i].classList.add('input-left');
 		} else {
-			formInput[i].classList.remove('input-left')
+			formInput[i].classList.remove('input-left');
 		}
-	}
+	};
 	formInputFunction();
 	
 	let formInputFunctionAll = function() {
 		if ((!formInput[i].value == '') && (formInput[i].value != '+7 ')) {
-			formInput[i].classList.add('input-left')
+			formInput[i].classList.add('input-left');
 		} else {
-			formInput[i].classList.remove('input-left')
+			formInput[i].classList.remove('input-left');
 		}
-	}
+	};
 
-	formInput[i].addEventListener('focus', formInputFunctionAll)
-	formInput[i].addEventListener('blur', formInputFunctionAll)
-	formInput[i].addEventListener('click', formInputFunction)
-	formInput[i].addEventListener('keyup', formInputFunctionAll)
+	formInput[i].addEventListener('focus', formInputFunctionAll);
+	formInput[i].addEventListener('blur', formInputFunctionAll);
+	formInput[i].addEventListener('click', formInputFunction);
+	formInput[i].addEventListener('keyup', formInputFunctionAll);
 } 
 
 
 let formInputPhone = document.getElementById('phone1');
 	let formInputPhoneFunction = function () {
 		if (!formInputPhone.value == '') {
-			formInputPhone.classList.add('input-left__modal')
+			formInputPhone.classList.add('input-left__modal');
 		} else {
-			formInputPhone.classList.remove('input-left__modal')
+			formInputPhone.classList.remove('input-left__modal');
 		}
 	}
 	formInputPhoneFunction();
 
 	let formInputPhoneFunctionAll = function() {
 		if ((!formInputPhone.value == '') && (formInputPhone.value != '+7 ')) {
-			formInputPhone.classList.add('input-left__modal')
+			formInputPhone.classList.add('input-left__modal');
 		} else {
-			formInputPhone.classList.remove('input-left__modal')
+			formInputPhone.classList.remove('input-left__modal');
 		}
-	}
+	};
 
-	formInputPhone.addEventListener('focus', formInputPhoneFunctionAll)
-	formInputPhone.addEventListener('blur', formInputPhoneFunctionAll)
-	formInputPhone.addEventListener('click', formInputPhoneFunction)
-	formInputPhone.addEventListener('keyup', formInputPhoneFunctionAll)
+	formInputPhone.addEventListener('focus', formInputPhoneFunctionAll);
+	formInputPhone.addEventListener('blur', formInputPhoneFunctionAll);
+	formInputPhone.addEventListener('click', formInputPhoneFunction);
+	formInputPhone.addEventListener('keyup', formInputPhoneFunctionAll);
 
 /* ------------------- */
 /* phone link whatsapp viber */

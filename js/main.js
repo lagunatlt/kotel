@@ -5,27 +5,74 @@ $('.repair__items-slider1').slick({
 	slidesToShow: 3,
 	slidesToScroll: 3,
 	// centerMode: true,
-	variableWidth: true
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 961,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+
+	]
 });
 
 $('.repair__items-slider2').slick({
 	infinite: false,
 	slidesToShow: 3,
 	slidesToScroll: 3,
-	variableWidth: true
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 961,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+
+	]
 });
 
 $('.repair__items-slider3').slick({
 	infinite: false,
 	slidesToShow: 3,
 	slidesToScroll: 3,
-	variableWidth: true
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 961,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+
+	]
 });
 
 $('.cert__slider').slick({
 	infinite: true,
 	slidesToShow: 3,
-	slidesToScroll: 3
+	slidesToScroll: 3,
+	responsive: [
+		{
+			breakpoint: 1281,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				infinite: true,
+			}
+		},
+		
+	]
 });
 /* ---------- */
 

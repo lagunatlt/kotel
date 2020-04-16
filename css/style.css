@@ -926,10 +926,12 @@ footer {
 #phone3-error,
 #phone4-error,
 #phone5-error {
-	font-size: 13px;
 	position: absolute;
 	top: -21px;
 	left: 50%;
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
 	transform: translateX(-50%);
 }
 

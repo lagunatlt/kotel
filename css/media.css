@@ -1,0 +1,8 @@
+@media (max-width: 800px) {
+	.form-main__v {
+		display: none !important;
+	}
+	.mobile {
+		display: inline !important;
+	}
+}

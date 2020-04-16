@@ -211,8 +211,3 @@ let formInputPhone = document.getElementById('phone1');
 /* ------------------- */
 /* phone link whatsapp viber */
 // let whatsappPhone = '777777777'
-let whatsappLink = document.querySelectorAll('.form-main__w')
-for (let i = 0; whatsappLink.length > i; i++) {
-	console.log(whatsappLink[i].href)
-	whatsappLink[i].href = 'https://wa.me/' + whatsappPhone;
-}

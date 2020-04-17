@@ -133,6 +133,16 @@ $(document).ready(function () {
 		$('#map1').addClass('scrolloff');
 	});
 });
+/* запрет скролла google maps */
+$(document).ready(function () {
+	$('#map2').addClass('scrolloff');
+	$('#overlay').on('click', function () {
+		$('#map2').removeClass('scrolloff');
+	});
+	$("#map2").mouseleave(function () {
+		$('#map2').addClass('scrolloff');
+	});
+});
 /* -------------------------- */
 /* -------------- */
 function setup_for_width(mql) {

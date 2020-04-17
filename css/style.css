@@ -1009,3 +1009,6 @@ footer {
 .mobile {
 	display: none !important;
 }
+#map2 {
+	display: none;
+}

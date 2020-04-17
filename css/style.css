@@ -390,6 +390,13 @@ input {
 	font-size: 14px;
 	line-height: 17px;
 }
+.form-main-footer__wrap {
+  display: flex;
+}
+
+.form-main-footer {
+  display: flex;
+}
 .form-main__w,
 .form-main__v {
 	display: inline-block;
@@ -957,7 +964,7 @@ footer {
 
 .form__modal input {
 	width: 100%;
-	max-width: 100%;
+	max-width: 290px;
 	height: 56px;
 	padding: 26px 22px;
 	border-radius: 10px;

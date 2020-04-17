@@ -25,6 +25,15 @@ $('.repair__items-slider1').slick({
 				slidesToScroll: 1,
 			}
 		},
+		{
+			breakpoint: 481,
+			settings: {
+				infinite: false,
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
 
 	]
 });
@@ -49,6 +58,15 @@ $('.repair__items-slider2').slick({
 			settings: {
 				infinite: false,
 				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 481,
+			settings: {
+				infinite: false,
+				arrows: false,
 				slidesToShow: 1,
 				slidesToScroll: 1,
 			}
@@ -81,6 +99,15 @@ $('.repair__items-slider3').slick({
 				slidesToScroll: 1,
 			}
 		},
+		{
+			breakpoint: 481,
+			settings: {
+				infinite: false,
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
 
 	]
 });
@@ -103,6 +130,15 @@ $('.cert__slider').slick({
 			settings: {
 				infinite: false,
 				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 481,
+			settings: {
+				infinite: false,
+				arrows: false,
 				slidesToShow: 1,
 				slidesToScroll: 1,
 			}

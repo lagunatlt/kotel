@@ -532,7 +532,7 @@
 		display: none !important;
 	}
 	.mobile {
-		display: inline !important;
+		display: block !important;
 	}
 }
 
@@ -678,7 +678,7 @@
 	}
 
   .repair__item {
-    margin: 10px 65px;
+    margin: 17px 98px;
   }
 
   .form-main__title {
@@ -720,7 +720,7 @@
   }
 
   .cert__item {
-    margin: 10px 78px;
+    margin: 17px 108px;
   }
 
 	.install__dogovor::before {
@@ -811,14 +811,14 @@
 
 @media (max-width: 480px) {
 
-.header__top .container {
-  padding-left: 5px;
-  padding-right: 5px;
-}
+	.header__top .container {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 
-.header__main ul li {
-  font-size: 1em;
-}
+	.header__main ul li {
+		font-size: 1em;
+	}
 
   .header__top-phone {
     font-size: 18px;
@@ -845,7 +845,6 @@
   .header__main ul li::before {
     left: 12px;
   }
-
 
   h1 {
     line-height: 34px;
@@ -900,6 +899,74 @@
     height: 51px;
     padding: 18px 11px;
   }
+
+	.form-main-footer__wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+  .form-const__wrap {
+    padding: 12px 7px;
+	}
+	.cert__item {
+		margin: 17px 10px;
+	}
+	.repair__number {
+		width: 130px;
+		height: 72px;
+	}
+
+  .repair__item {
+    margin: 17px 5px;
+    box-shadow: 0 0 1px #c4c4c48c;
+  }
+
+	.slick-list {
+		padding: 0;
+	}
+	.certificate>div:nth-child(1) {
+  width: 320px;
+	}
+
+	.contact__form {
+		margin: 30px 13px;
+	}
+	.input-left {
+		padding-left: 55px;
+	}
+
+	footer {
+		padding-top: 10px;
+	}
+
+
+  .fancybox-content {
+		padding: 15px 5px;
+		overflow: hidden;
+  }
+
+  .form__modal .button__form {
+    max-width: 265px;
+  }
+
+	.fancybox-slide--html .fancybox-close-small {
+		right: -9px;
+		top: -9px;
+	}
+
+	.form__modal input {
+		width: 300px;
+		max-width: 265px;
+	}
+
+	.form__modal .button__form {
+		width: 300px;
+		min-height: 61px;
+	}
+
+	.form__modal {
+		width: 280px;
+	}
 
 
 }

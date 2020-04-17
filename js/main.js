@@ -16,6 +16,15 @@ $('.repair__items-slider1').slick({
 				slidesToScroll: 2,
 			}
 		},
+		{
+			breakpoint: 721,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
 
 	]
 });
@@ -33,6 +42,15 @@ $('.repair__items-slider2').slick({
 				// arrows: false,
 				slidesToShow: 2,
 				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 721,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
 			}
 		},
 
@@ -54,6 +72,15 @@ $('.repair__items-slider3').slick({
 				slidesToScroll: 2,
 			}
 		},
+		{
+			breakpoint: 721,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
 
 	]
 });
@@ -69,6 +96,15 @@ $('.cert__slider').slick({
 				slidesToShow: 2,
 				slidesToScroll: 2,
 				infinite: true,
+			}
+		},
+		{
+			breakpoint: 721,
+			settings: {
+				infinite: false,
+				// arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
 			}
 		},
 		

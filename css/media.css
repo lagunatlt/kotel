@@ -527,19 +527,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
 	.form-main__v {
 		display: none !important;
@@ -547,4 +534,60 @@
 	.mobile {
 		display: inline !important;
 	}
+}
+
+@media (max-width: 720px) {
+	.container,
+	.header__top .container {
+		max-width: 540px;
+	}
+
+	.header__top-button {
+		display: none;
+	}
+
+	h1 {
+		line-height: 45px;
+		font-size: 2.35em;
+	}
+
+	h2 {
+		font-size: 2.200em;
+		line-height: 38px;
+	}
+
+	h3 {
+		line-height: 42px;
+	}
+
+	section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.exit h3 {
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.exit__wrap {
+		flex-direction: column;
+	}
+
+	h3 {
+		font-size: 2.225em;
+	}
+
+	.repair__item {
+		margin: 24px 100px;
+	}
+	.cert__wrap {
+		width: 100%;
+	}
+	.cert__item {
+		margin: 20px 100px;
+	}
+	
+
 }
